@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/newhome.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section1 " id="services">
+        <div class="para">
+            <p class="sectiontag textbig">PROCEDUERS AND FUNCTIONS</p><BR><BR>
+            <p class="sectiontag textbig">PROCEDUERS </p>
+            <p class="sectionsubtag textsmall">
+                
+                
+                Packages are schema objects that groups logically related PL/SQL types, variables, and subprograms.<BR>
+
+A package will have two mandatory parts -<BR>
+
+                
+                
+
+                <a href="#Package specification">1.Package specification  <BR></a>
+                <a href="#Package Body">2. Package body or definition  <BR>     </a>
+               
+               
+               
+
+
+
+
+            </p>
+        </div>
+       
+       
+       
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="Package Specification">
+            <p class="sectiontag textbig">1.Package Specification</p></a>
+            <p class="sectionsubtag textsmall">
+                
+                
+                
+The specification is the interface to the package. It just DECLARES the types, variables, constants, exceptions, cursors, and subprograms that can be referenced from outside the package. In other words, it contains all information about the content of the package, but excludes the code for the subprograms.<BR>
+
+All objects placed in the specification are called public objects. Any subprogram not in the package specification but coded in the package body is called a private object.<BR>
+
+The following code snippet shows a package specification having a single procedure. You can have many global variables defined and multiple procedures or functions inside a package.<BR>
+                
+  
+ 
+  
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+
+                    Example -<br>
+
+                <BR><img src="images/pk.png" alt="image"><BR>
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+
+
+    <section class="section">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="Package Body">Package Body</a></p>
+            <p class="sectionsubtag textsmall">
+                
+The package body has the codes for various methods declared in the package specification and other private declarations, which are hidden from the code outside the package.
+
+The CREATE PACKAGE BODY Statement is used for creating the package body. The following code snippet shows the package body declaration for the cust_sal package created above.<br> I assumed that we already have CUSTOMERS table created in our database as mentioned in the Example -<br>
+
+                <img src="images/pk1.png" alt="image" class="imgfluid">
+
+
+
+
+
+            </p>
+    </section>
+    
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig">CALLING A PACKAGE </p>
+            <p class="sectionsubtag textsmall">
+                
+
+                
+
+                
+
+                
+
+                
+                    Example:<BR>
+
+
+
+
+                    <BR>
+                    <img src="images/PK2.png" alt="image" class="imgfluid">
+                    </p>
+        </div>
+    </section>
+
+    <hr>
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="FUNCTIONS">2.FUNCTIONS</a> </p>
+            <p class="sectionsubtag textsmall">
+                A function is same as a procedure except that it returns a value. Therefore, all the discussions of the previous chapter are true for functions too.<br>
+
+Creating a Function<br>
+A standalone function is created using the CREATE FUNCTION statement. The simplified syntax for the CREATE OR REPLACE PROCEDURE statement is as follows -<br>
+
+CREATE [OR REPLACE] FUNCTION function_name <br>
+[(parameter_name [IN | OUT | IN OUT] type [, ...])] <br>
+RETURN return_datatype <br>
+{IS | AS} <br>
+BEGIN <br>
+   < function_body > 
+END [function_name];<br>
+Where,<br>
+
+function-name specifies the name of the function.<br>
+
+[OR REPLACE] option allows the modification of an existing function.<br>
+
+The optional parameter list contains name, mode and types of the parameters. IN represents the value that will be passed from outside and OUT represents the parameter that will be used to return a value outside of the procedure.<br>
+
+The function must contain a return statement.<br>
+
+The RETURN clause specifies the data type you are going to return from the function.<br>
+
+function-body contains the executable part.<br>
+
+The AS keyword is used instead of the IS keyword for creating a standalone function.<br>
+                
+
+                
+                
+
+                
+                
+                    Example -<br>
+                <img src="images/fun1.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+
+
+
+    </section>
+
+
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig">Calling a Function </p>
+            <p class="sectionsubtag textsmall">
+                
+                
+While creating a function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task. When a program calls a function, the program control is transferred to the called function.<br>
+
+A called function performs the defined task and when its return statement is executed or when the last end statement is reached, it returns the program control back to the main program.<br>
+
+To call a function, you simply need to pass the required parameters along with the function name and if the function returns a value, then you can store the returned value.<br>
+
+                
+                
+
+                
+
+
+
+
+                    Example -
+                <BR>
+                <img src="images/fun2.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+
+
+
+    </section>
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

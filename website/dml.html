@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section " id="services">
+        <div class="para">
+            <p class="sectiontag textbig">DATA MANIPULATION LANGUAGE</p>
+            <p class="sectionsubtag textsmall">
+
+                The SQL commands that deals with the manipulation of data present in the database belong to DML or Data
+                Manipulation Language and this includes most of the SQL statements. It is the component of the SQL
+                statement that controls access to data and to the database. Basically, DCL statements are grouped with
+                DML statements.
+
+
+
+
+
+
+
+                List of DML commands: <BR>
+                In this section, We will cover the following DDL commands as follows.<BR>
+
+                <a href="#create">1. INSERT : </a> It is used to insert data into a table.<BR>     
+                <a href="#update">2. UPDATE:  </a>It is used to update existing data within a table.<BR> 
+                <a href="#delete">3. DELETE : </a> It is used to delete records from a database table.<BR>
+
+
+
+
+
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/dmlp.png" alt="image" class="imgfluid">
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="create">
+                <p class="sectiontag textbig">1.INSERT</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+                INSERT commands in SQL are used to insert data records or rows in a database table. In an INSERT
+                statement, we specify both the column_names for which the entry has to be made along with the data value
+                that has to be inserted.<BR>
+
+                The basic syntax for writing INSERT statements in SQL is as follows :<BR>
+
+                INSERT INTO table_name (column_name_1, column_name_2, column_name_3, ...)<BR>
+                VALUES (value1, value2, value3, ...)<BR>
+                By VALUES, we mean the value of the corresponding columns.<BR>
+
+                Here are a few examples to further illustrate the INSERT statement.<BR>
+                <BR><img src="images/M1.1.png" alt="image"><BR>
+
+                Suppose if we have to insert values into all the fields of the database table, then we need not specify
+                the column names, unlike the previous query. Follow the following query for further illustration.<BR>
+                SYNTAX:<BR>
+
+                INSERT INTO table_name <BR>
+                VALUES (value1,value2....);
+
+
+                <BR>
+
+
+
+                <BR><img src="images/m1.png" alt="image"><BR>
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+
+
+    <section class="section1">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="update">2.UPDATE</a></p>
+            <p class="sectionsubtag textsmall">
+                UPDATE command or statement is used to modify the value of an existing column in a database table.<BR>
+
+                The syntax for writing an UPDATE statement is as follows :<BR>
+
+                UPDATE table_name<BR>
+                SET column_name_1 = value1, column_name_2 = value2, ...<BR>
+                WHERE condition;<BR>
+                Having learnt the syntax, let us now try an example based on the UPDATE statement in SQL.<BR>
+
+
+
+
+
+
+
+
+                <BR>
+                Example –<br>
+
+                <img src="images/M2.png" alt="image" class="imgfluid">
+
+
+
+
+
+            </p>
+    </section>
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="delete">3.DELETE</a> </p>
+            <p class="sectionsubtag textsmall">
+                DELETE statement in SQL is used to remove one or more rows from the database table. It does not delete    <BR>
+                the data records permanently. We can always perform a rollback operation to undo a DELETE command. With<BR>
+                DELETE statements we can use the WHERE clause for filtering specific rows.<BR>
+                The syntax for writing an DELETE statement is as follows :<BR>
+                DELETE FROM table_name WHERE condition;<BR>
+                Having learnt the syntax, we are all set to try an example based on the DELETE command in SQL.<BR>
+
+
+
+
+
+
+
+
+                <img src="images/M3.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+
+
+
+    </section>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

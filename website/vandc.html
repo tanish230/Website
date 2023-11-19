@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="create">
+                <p class="sectiontag textbig">VARIABLES</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+                PL/SQL programming language allows to define various types of variables, such as date time data types,
+                records, collections, etc. which we will cover in subsequent chapters. For this chapter, let us study
+                only basic variable types.<BR>
+                Variable Declaration in PL/SQL<BR>
+                PL/SQL variables must be declared in the declaration section or in a package as a global variable. When
+                you declare a variable, PL/SQL allocates memory for the variable's value and the storage location is
+                identified by the variable name.<BR>
+
+                The syntax for declaring a variable is −<BR>
+
+                variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]<BR>
+                Initializing Variables in PL/SQL<BR>
+                Whenever you declare a variable, PL/SQL assigns it a default value of NULL. If you want to initialize a
+                variable with a value other than the NULL value, you can do so during the declaration, using either of
+                the following −<BR>
+
+                The DEFAULT keyword<BR>
+
+                The assignment operator<BR>
+
+                For example −<BR>
+
+                <BR><img src="images/V1.png" alt="image"><BR>
+
+                Variable Scope in PL/SQL<br>
+                PL/SQL allows the nesting of blocks, i.e., each program block may contain another inner block. If a
+                variable is declared within an inner block, it is not accessible to the outer block. However, if a
+                variable is declared and accessible to an outer block, it is also accessible to all nested inner
+                blocks.<br>
+                There are two types of variable scope −<br>
+
+                Local variables − Variables declared in an inner block and not accessible to outer blocks.<br>
+
+                Global variables − Variables declared in the outermost block or a package.<br>
+
+                Following example shows the usage of Local and Global variables in its simple form −<br>
+                <BR><img src="images/v1.1.png" alt="image"><BR>
+
+            </p>
+    </section>
+
+
+
+
+
+    <section class="section">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="alter">CONSTANT</a></p>
+            <p class="sectionsubtag textsmall">
+
+                A constant holds a value that once declared, does not change in the program. A constant declaration
+                specifies its name, data type, and value, and allocates storage for it. The declaration can also impose
+                the NOT NULL constraint.<br>
+
+                Declaring a Constant<br>
+                A constant is declared using the CONSTANT keyword. It requires an initial value and does not allow that
+                value to be changed.<br> For example −<br>
+
+
+                <img src="images/vc1.png" alt="image" class="imgfluid">
+
+
+
+
+
+            </p>
+    </section>
+
+    <section class="section1">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="alter">FETCH DATA FROM TABLE</a></p>
+            <p class="sectionsubtag textsmall">
+                Used to fetch data from table.<br>
+
+            
+                
+                
+                
+                
+                
+                
+
+                <img src="images/vc2.png" alt="image" class="imgfluid">
+            </p>
+    </section><BR>
+
+
+
+
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    
+    
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

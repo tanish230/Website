@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section " id="services">
+        <div class="para">
+            <p class="sectiontag textbig">CONSTRAINTS</p>
+            <p class="sectionsubtag textsmall">
+
+                Constraints are the rules that we can apply on the type of data in a table. That is, we can specify the
+                limit on the type of data that can be stored in a particular column in a table using constraints. <BR>
+                <BR>t
+                The available constraints in SQL are: <BR>
+
+
+
+
+
+
+                <a href="#NOTNULL">1. NOT NULL: </a>
+                This constraint tells that we cannot store a null value in a column. That is, if a column is specified
+                as NOT NULL then we will
+                not be able to store null in this particular column any more.<BR>
+
+
+                <a href="#unique">2.UNIQUE: </a>
+                This constraint when specified with a column, tells that all the values in the column must be unique.
+                That is, the values in any
+                row of a column must not be repeated.<BR>
+                <a href="#PRIMARYKEY">3.PRIMARY KEY:</a>
+                A primary key is a field which can uniquely identify each row in a table. And this constraint is used to
+                specify a field in a
+                table as primary key.<BR>
+
+                <a href="#FOREIGNKEY">4.FOREIGN KEY:</a>
+                A Foreign key is a field which can uniquely identify each row in a another table. And this
+                constraint is used to specify a field as Foreign key.<BR>
+
+
+
+
+                <a href="#CHECK">5.CHECK: </a>
+                This constraint helps to validate the values of a column to meet a particular condition. That is,
+                it helps to ensure that the value stored in a column meets a specific condition.<BR>
+
+
+
+
+                <a href="#DEFAULT">6.DEFAULT: </a>
+                This constraint specifies a default value for the column when no value is specified by the
+                user.<BR>
+
+
+
+
+
+
+
+
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/clauses.png" alt="image" class="imgfluid">
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="NOTNULL">
+                <p class="sectiontag textbig">1.NOT NULL</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+
+                If we specify a field in a table to be NOT NULL. Then the field will never accept null value. That is,
+                you will be not allowed to insert a new row in the table without specifying any value to this field.<BR>
+                For example, the below query creates a table Student with the fields ID and NAME as NOT NULL. That is,
+                we are bound to specify values for these two fields every time we wish to insert a new row.<BR>
+
+
+                ExampleGet your own SQL Server<BR>
+                CREATE TABLE Persons (<BR>
+                ID int NOT NULL,<BR>
+                LastName varchar(255) NOT NULL,<BR>
+                FirstName varchar(255) NOT NULL,<BR>
+                Age int<BR>
+                );<BR>
+
+
+
+                <BR><img src="images/co1.png" alt="image"><BR>
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+
+
+    <section class="section1">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="unique">2.SQL UNIQUE Constraint</a></p>
+            <p class="sectionsubtag textsmall">
+
+                The UNIQUE constraint ensures that all values in a column are different.<br>
+
+                Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of
+                columns.<br>
+
+                A PRIMARY KEY constraint automatically has a UNIQUE constraint.<br>
+
+                However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per
+                table.<br>
+
+
+
+
+                Syntax:<br>
+                CREATE TABLE TableName (ColumnName1 datatype UNIQUE, ColumnName2 datatype,…., ColumnNameN datatype);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <BR>
+                Example –<br>
+
+                <img src="images/co2.png" alt="image" class="imgfluid">
+
+
+
+
+
+            </p>
+    </section>
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="PRIMARYKEY">3.PRIMARY KEY</a> </p>
+            <p class="sectionsubtag textsmall">
+
+                PRIMARY KEY Constraint is a combination of NOT NULL and Unique constraints.<BR>
+                NOT NULL constraint and a UNIQUE constraint together forms a PRIMARY constraint.<BR>
+                The column to which we have applied the primary constraint will always contain a unique value and will
+                not allow null values.<BR>
+                Syntax of primary key constraint during table creation:<BR>
+                CREATE TABLE TableName (ColumnName1 datatype PRIMARY KEY, ColumnName2 datatype,…., ColumnNameN
+                datatype); <BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Example:<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <img src="images/c3.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+
+
+
+    </section>
+
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="FOREIGNKEY">4.FOREIGN KEY</a> </p>
+            <p class="sectionsubtag textsmall">
+                A foreign key is used for referential integrity.<BR>
+                When we have two tables, and one table takes reference from another table, i.e., the same column is
+                present in both the tables and that column acts as a primary key in one table. That particular column
+                will act as a foreign key in another table.<BR>
+                Syntax to apply a foreign key constraint during table creation:<BR>
+                CREATE TABLE tablename(ColumnName1 Datatype(SIZE) PRIMARY KEY, ColumnNameN Datatype(SIZE), FOREIGN KEY(
+                ColumnName ) REFERENCES PARENT_TABLE_NAME(Primary_Key_ColumnName)); <BR>
+                    Example:<br>
+
+
+
+
+
+
+                <img src="images/co4.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="CHECK">5.CHECK</a> </p>
+            <p class="sectionsubtag textsmall">
+                Whenever a check constraint is applied to the table's column, and the user wants to insert the value in
+                it, then the value will first be checked for certain conditions before inserting the value into that
+                column.<BR>
+                For example: if we have an age column in a table, then the user will insert any value of his choice. The
+                user will also enter even a negative value or any other invalid value. But, if the user has applied
+                check constraint on the age column with the condition age greater than 18. Then in such cases, even if a
+                user tries to insert an invalid value such as zero or any other value less than 18, then the age column
+                will not accept that value and will not allow the user to insert it due to the application of check
+                constraint on the age column.<BR>
+                Syntax to apply check constraint on a single column:<BR>
+                CREATE TABLE TableName (ColumnName1 datatype CHECK (ColumnName1 Condition), ColumnName2 datatype,….,
+                ColumnNameN datatype);
+                Example:<br>
+
+                <BR>
+                <img src="images/co5.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+    </section>
+
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="DEFAULT">6.DEFAULT</a> </p>
+            <p class="sectionsubtag textsmall">
+                Whenever a default constraint is applied to the table's column, and the user has not specified the value
+                to be inserted in it, then the default value which was specified while applying the default constraint
+                will be inserted into that particular column.<br>
+
+                Syntax to apply default constraint during table creation:<br>
+                CREATE TABLE TableName (ColumnName1 datatype DEFAULT Value, ColumnName2 datatype,…., ColumnNameN datatype);  
+                Example:<br>
+
+
+
+
+
+
+
+
+
+
+
+                <img src="images/co6.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

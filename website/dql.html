@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section " id="services">
+        <div class="para">
+            <p class="sectiontag textbig"> Data Query Language </p>
+            <p class="sectionsubtag textsmall">
+
+
+
+                DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL
+                Command is to get some schema relation based on the query passed to it. We can define DQL as follows it
+                is a component of SQL statement that allows getting data from the database and imposing order upon it.
+                It includes the SELECT statement. This command allows getting the data out of the database to perform
+                operations with it. When a SELECT is fired against a table or tables the result is compiled into a
+                further temporary table, which is displayed or perhaps received by the program i.e. a front-end.
+
+                List of DQL:
+
+                SELECT: It is used to retrieve data from the database.
+
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/dql.jpg" alt="image" class="imgfluid">
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="create">
+                <p class="sectiontag textbig">1.SELECT Query</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+
+                Select is the most commonly used statement in SQL. The SELECT Statement in SQL is used to retrieve or
+                fetch data from a database. We can fetch either the entire table or according to some specified rules.
+                The data returned is stored in a result table. This result table is also called the result set. With the
+                SELECT clause of a SELECT command statement, we specify the columns that we want to be displayed in the
+                query result and, optionally, which column headings we prefer to see above the result table. The select
+                clause is the first clause and is one of the last clauses of the select statement that the database
+                server evaluates. The reason for this is that before we can determine what to include in the final
+                result set, we need to know all of the possible columns that could be included in the final result set.
+                <br>
+
+                Syntax:<br>
+                SELECT column1,column2 FROM table_name               <br>
+                column1 , column2: names of the fields of the table<br>
+                table_name: from where we want to apply query<br>
+
+                Example:<br>
+                <BR><img src="images/q1.png" alt="image"><BR>
+            </p>
+    </section>
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

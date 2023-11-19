@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 46px;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+
+.navlist {
+    width: 70%;
+    /*background-color:black;*/
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.navlist li a:hover {
+    text-decoration: none;
+    color: grey;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightnav {
+    /*background-color:rgba(56, 52, 52, 0.116);*/
+    width: 30%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+
+
+}
+
+
+.background {
+    background: rgb(0, 0, 0, 0.7) url("../images/logo2.jpeg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection {
+    height: 50vh;
+}
+
+.boxmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+
+
+
+}
+
+.firsthalf {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf {
+    width: 30%;
+}
+
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+.textbig {
+    font-size: 41px;
+}
+
+.textsmall {
+    font-size: 18px;
+}
+
+.btn {
+
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid 3px;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+
+
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: grey;
+
+}
+
+
+btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(202, 219, 234);
+    padding: 10px;
+}
+
+
+.section1 {
+
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(202, 219, 234);
+    padding: 10px;
+}
+
+.left {
+    flex-direction: row-reverse;
+
+}
+
+.sectionsubtag {
+    padding: 16px 0;
+}
+
+
+.para {
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact {
+    background-color: rgb(227, 239, 249);
+    height: 110vh;
+
+
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+.burger {
+    position: absolute;
+
+    cursor: pointer;
+
+    display: none;
+    right: 5%;
+    top: 15px;
+
+
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+
+}
+
+
+.X1 img {
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 60px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #c4ecf9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: rgb(78, 107, 132);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #b5d2df;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+@media only screen and (max-width:1140px) {
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 447px;
+    }
+
+    .rightnav {
+        text-align: center;
+
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hnavresp {
+        height: 72px;
+    }
+
+    .vclassresp {
+        opacity: 0;
+    }
+
+    .boxmain {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .section1 {
+        flex-direction: column-reverse;
+    }
+
+    .textsmall {
+        text-align: center;
+    }
+
+    .textbig {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .para {
+        padding: 0px;
+    }
+}

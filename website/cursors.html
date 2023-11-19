@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="create">
+                <p class="sectiontag textbig">CURSORS</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+
+                A cursor is a pointer to this context area. PL/SQL controls the context area through a cursor. A cursor
+                holds the rows (one or more) returned by a SQL statement. The set of rows the cursor holds is referred
+                to as the active set.<br>
+
+                You can name a cursor so that it could be referred to in a program to fetch and process the rows
+                returned by the SQL statement, one at a time. There are two types of cursors −<br>
+
+                <a href="#Implicitcursors">1.Implicit cursors<br></a>
+                    <a href="#IFExplicitCursors">2.Explicit cursors<br></a>
+
+            </p>
+    </section>
+
+    <section class="section">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="Implicitcursors">1.Implicit Cursors</a></p>
+            <p class="sectionsubtag textsmall">
+                Implicit cursors are automatically created by Oracle whenever an SQL statement is executed, when there
+                is no explicit cursor for the statement. Programmers cannot control the implicit cursors and the
+                information in it.<br>
+                Whenever a DML statement (INSERT, UPDATE and DELETE) is issued, an implicit cursor is associated with
+                this statement. For INSERT operations, the cursor holds the data that needs to be inserted. For UPDATE
+                and DELETE operations, the cursor identifies the rows that would be affected.<br>
+                In PL/SQL, you can refer to the most recent implicit cursor as the SQL cursor, which always has
+                attributes such as %FOUND, %ISOPEN, %NOTFOUND, and %ROWCOUNT. The SQL cursor has additional attributes,
+                %BULK_ROWCOUNT and %BULK_EXCEPTIONS, designed for use with the FORALL statement. <br>
+                Example –<br>
+                <BR><img src="images/cu1.png" alt="image"><BR>
+
+
+
+
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+    <section class="section">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="ExplicitCursors">2.Explicit Cursors</a></p>
+            <p class="sectionsubtag textsmall">
+
+
+                Explicit cursors are programmer-defined cursors for gaining more control over the context area. An
+                explicit cursor should be defined in the
+                declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one
+                row.<br>
+
+                The syntax for creating an explicit cursor is −<br>
+
+                CURSOR cursor_name IS select_statement; <br>
+                Working with an explicit cursor includes the following steps −<br>
+
+                Declaring the cursor for initializing the memory<br>
+                Opening the cursor for allocating the memory<br>
+                Fetching the cursor for retrieving the data<br>
+                Closing the cursor to release the allocated memory<br>
+                Declaring the Cursor<br>
+                Declaring the cursor defines the cursor with a name and the associated SELECT statement. For example
+                −<br>
+
+                CURSOR c_customers IS <br>
+                SELECT id, name, address FROM customers; <br>
+                Opening the Cursor<br>
+                Opening the cursor allocates the memory for the cursor and makes it ready for fetching the rows returned
+                by the SQL statement into it. For
+                example, we will open the above defined cursor as follows −<br>
+
+                OPEN c_customers; <br>
+                Fetching the Cursor<br>
+                Fetching the cursor involves accessing one row at a time. For example, we will fetch rows from the
+                above-opened cursor as follows −<br>
+
+                FETCH c_customers INTO c_id, c_name, c_addr; <br>
+                Closing the Cursor<br>
+                Closing the cursor means releasing the allocated memory.<br> For example, we will close the above-opened
+                cursor as follows −<br>
+
+                CLOSE c_customers;<br><br>
+
+
+
+
+
+
+
+
+                Example –<br>
+                <BR><img src="images/cu2.png" alt="image"><BR>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>

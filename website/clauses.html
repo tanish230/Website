@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist vclassresp">
+            <div class="logo"><img src="images/ML.png" alt="logo"></div>
+            <li><a href="../website/home.html">Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href="../website/programs.html">Topics</a></li>
+            <li><a href=#contact>Contact us</a></li>
+        </ul>
+        <div class="rightnav vclassresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig">A CODING BLOG BY HIMANSHU CHOPRA...</p><BR><BR>
+                <p class="textsmall">For Tutorials On DBMS You Can Visit These Buttons</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS">Subscribe</a></button>
+                    <button class="btn"><a
+                            href="https://www.youtube.com/watch?v=s9201lcULB4&list=PLk05cwASVVZvx5vHLFBNNgOEDf2nY1c6e">Watch
+                            video</a></button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="images/logo1.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section " id="services">
+        <div class="para">
+            <p class="sectiontag textbig">CLAUSES</p>
+            <p class="sectionsubtag textsmall">
+
+                SQL (Structured Query Language) is a query language that is used to query the given data, and the
+                desired or required data is returned from the database. SQL is widely used for multiple operations that
+                are related to the data, and to achieve that, there are various methods or processes available in SQL.
+                To deal with a large amount of data, various clauses are available in SQL, which you'll study in this
+                topic.<BR>
+
+                A clause in SQL is a built-in function that helps to fetch the required records from a database table. A
+                clause receives a conditional expression, i.e. a column name or some terms involving the columns. The
+                clause calculates the result based on the given statements in the expression. When a large amount of
+                data is stored in the database, clauses are helpful to filter and analyze the queries. There are
+                different types of clauses in SQL that are available for fetching the desired data, and these are
+                mentioned below:<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="#WHERE">1.WHERE : </a>The WHERE clause in SQL is used to retrieve the specific data from the
+                database that specifies the conditions exactly that are given in the UPDATE, DELETE, etc.
+                statements.<BR>
+                <a href="#ODERBY">2.ORDER BY : </a>The ORDER BY clause in SQL is used for sorting the records of the
+                database tables<BR>
+                <a href="#GROUPBY">3.GROUP BY :</a>To group the result set of the rows that have the same values in the
+                result set from the database tables, the GROUP BY clause is used. <BR>
+                <a href="#HAVING">4.HAVING : </a>HAVING clause can be used in a GROUP BY clause. It is used to specify a
+                search condition for a
+                group in the database tables.<BR>
+
+
+
+
+
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/clauses.png" alt="image" class="imgfluid">
+        </div>
+    </section>
+
+
+    <section class="section1">
+        <div class="para">
+            <a name="WHERE">
+                <p class="sectiontag textbig">1.WHERE CLAUSE</p>
+            </a>
+            <p class="sectionsubtag textsmall">
+
+                In MySQL, we use the SQL SELECT statement to select data from a table in the database. Here, the WHERE
+                clause allows filtering certain records that exactly match a specified condition. Thus, it helps us to
+                fetch only the necessary data from the database that satisfies the given expressional conditions. The
+                WHERE clause is used with SELECT statement as well as with UPDATE, DELETE type statements and aggregate
+                functions to restrict the no. of records to be retrieved by the table. We can also use logical or
+                comparison operators such as LIKE,<,>,=, etc. with WHERE clause to fulfill certain conditions.<br>
+
+                    Syntax:<br>
+
+                    SELECT Column1,….ColumnN From Table_name WHERE [condition];<br>
+
+                    Example:<br>
+
+
+
+
+
+
+
+
+
+
+
+                    <BR><img src="images/c1.png" alt="image"><BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+    </section>
+
+
+
+
+
+    <section class="section1">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="ORDERBY">2.ORDERBY CLAUSE</a></p>
+            <p class="sectionsubtag textsmall">
+
+                The ORDER BY clause is used in SQL for sorting records. It is used to arrange the result set either in
+                ascending or descending order. When we query using SELECT statement the result is not in an ordered
+                form. Hence, the result rows can be sorted when we combine the SELECT statement with the ORDER BY
+                clause.<BR>
+
+                Syntax:<br>
+                SELECT column1, …,columnN FROM TableName ORDER BY column1,...,column ASC|DESC;<br>
+                Example:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <BR>
+                Example –<br>
+
+                <img src="images/c2.png" alt="image" class="imgfluid">
+
+
+
+
+
+            </p>
+    </section>
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="GROUPBY">3.GROUPBY CLAUSE</a> </p>
+            <p class="sectionsubtag textsmall">
+                SQL GROUP BY statement is used to arrange identical data into groups. The GROUP BY statement is used
+                with the SQL SELECT statement.<BR>
+                The GROUP BY statement follows the WHERE clause in a SELECT statement and precedes the ORDER BY
+                clause.<BR>
+                The GROUP BY statement is used with aggregation function.<BR>
+                Syntax:<BR>
+
+                SELECT column<BR>
+                FROM table_name<BR>
+                WHERE conditions<BR>
+                GROUP BY column<BR>
+                ORDER BY column<BR>
+                <BR>
+                Example:<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <img src="images/c3.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+
+
+
+    </section>
+
+    <section class="section1 ">
+        <div class="para">
+            <p class="sectiontag textbig"><a name="HAVING">4.HAVING CLAUSE</a> </p>
+            <p class="sectionsubtag textsmall">
+
+                HAVING clause is used to specify a search condition for a group or an aggregate.<br>
+                Having is used in a GROUP BY clause. If you are not using GROUP BY clause then you can use HAVING
+                function like a WHERE clause.<br>
+                Syntax:<br>
+
+                SELECT column1, column2<br>
+                FROM table_name<br>
+                WHERE conditions<br>
+                GROUP BY column1, column2<br>
+                HAVING conditions<br>
+                ORDER BY column1, column2;<br>
+                Example:<br>
+
+
+
+
+
+
+                <img src="images/c4.png" alt="image" class="imgfluid">
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <ul class="navlist vclassresp X1">
+
+            <li><a href=https://instagram.com/urs__buddy__?igshid=ZDdkNTZiNTM=><img src="images/INSTA.jpg"
+                        alt="INSTAGRAM"></a></li>
+            <li><a href=https://www.facebook.com><img src="images/FB.jpg" alt="FACEBOOK"></a></li>
+            <li><a href=https://twitter.com/i/flow/login?input_flow_data><img src="images/TW.png" alt="TWITTER"></a>
+            </li>
+            <li><a href=https://mail.google.com><img src="images/MAIL.png" alt="MAIL"></a></li>
+        </ul>
+
+
+    </section>
+    
+    
+    <a name="about">
+        <footer class="footer background">
+        Copyright &copy; 2023 www.chopracreations.com- All Rights Reserved
+        </footer></a>
+    <script src="js/responsive.js"></script>
+</body>
+
+</html>
